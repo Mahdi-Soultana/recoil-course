@@ -5,6 +5,7 @@ import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import {RecoilRoot} from 'recoil'
 import Canvas from './Canvas'
 import Atoms from './examples/Atoms'
+import {Selectors} from './examples/Selector'
 import './index.css'
 
 ReactDOM.render(
@@ -15,6 +16,9 @@ ReactDOM.render(
                     <Switch>
                         <Route path="/examples/atoms">
                             <Atoms />
+                        </Route>
+                        <Route path="/examples/selectors">
+                            <Selectors />
                         </Route>
                         <Route>
                             <Canvas />
